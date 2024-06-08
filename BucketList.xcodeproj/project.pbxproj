@@ -90,7 +90,6 @@
 				B0274164A73A53660BA93055 /* Pods-BucketList.debug.xcconfig */,
 				FB0FFB1016074E9A7F4006B3 /* Pods-BucketList.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -346,6 +345,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
 				DEVELOPMENT_TEAM = 9NHVUWY5RP;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BucketList/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need access to your personal data.";
@@ -378,6 +378,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
 				DEVELOPMENT_TEAM = 9NHVUWY5RP;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BucketList/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need access to your personal data.";

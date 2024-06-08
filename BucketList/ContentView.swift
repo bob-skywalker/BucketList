@@ -9,7 +9,6 @@ import SwiftUI
 import MapKit
 import LocalAuthentication
 import WebKit
-import Kingfisher
 
 struct YoutubeView: UIViewRepresentable {
     func makeUIView(context: Context) -> WKWebView {
