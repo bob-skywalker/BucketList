@@ -11,14 +11,19 @@
 		5CC920572C111DC60046075C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC920562C111DC60046075C /* ContentView.swift */; };
 		5CC920592C111DC70046075C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC920582C111DC70046075C /* Assets.xcassets */; };
 		5CC9205C2C111DC70046075C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC9205B2C111DC70046075C /* Preview Assets.xcassets */; };
+		9985E6BC36EECCBCD742A2E3 /* Pods_BucketList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31DCBC5E2D32AC810DD55DC /* Pods_BucketList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C8286DA2C12A2EE00470F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5CC920512C111DC60046075C /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC920542C111DC60046075C /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		5CC920562C111DC60046075C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CC920582C111DC70046075C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CC9205B2C111DC70046075C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0274164A73A53660BA93055 /* Pods-BucketList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketList.debug.xcconfig"; path = "Target Support Files/Pods-BucketList/Pods-BucketList.debug.xcconfig"; sourceTree = "<group>"; };
+		E31DCBC5E2D32AC810DD55DC /* Pods_BucketList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BucketList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0FFB1016074E9A7F4006B3 /* Pods-BucketList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketList.release.xcconfig"; path = "Target Support Files/Pods-BucketList/Pods-BucketList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9985E6BC36EECCBCD742A2E3 /* Pods_BucketList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +43,8 @@
 			children = (
 				5CC920532C111DC60046075C /* BucketList */,
 				5CC920522C111DC60046075C /* Products */,
+				FE9C1694E198A3280A017191 /* Pods */,
+				DB6CE56DE4339FBA7D50E29E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +59,7 @@
 		5CC920532C111DC60046075C /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				5C8286DA2C12A2EE00470F5A /* Info.plist */,
 				5CC920542C111DC60046075C /* BucketListApp.swift */,
 				5CC920562C111DC60046075C /* ContentView.swift */,
 				5CC920582C111DC70046075C /* Assets.xcassets */,
@@ -67,6 +76,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DB6CE56DE4339FBA7D50E29E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E31DCBC5E2D32AC810DD55DC /* Pods_BucketList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE9C1694E198A3280A017191 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0274164A73A53660BA93055 /* Pods-BucketList.debug.xcconfig */,
+				FB0FFB1016074E9A7F4006B3 /* Pods-BucketList.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CC9205F2C111DC70046075C /* Build configuration list for PBXNativeTarget "BucketList" */;
 			buildPhases = (
+				31D9C4DE915DB9FA38FFD3B6 /* [CP] Check Pods Manifest.lock */,
 				5CC9204D2C111DC60046075C /* Sources */,
 				5CC9204E2C111DC60046075C /* Frameworks */,
 				5CC9204F2C111DC60046075C /* Resources */,
+				63531D1038831C97C494CB24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31D9C4DE915DB9FA38FFD3B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BucketList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63531D1038831C97C494CB24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BucketList/Pods-BucketList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BucketList/Pods-BucketList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BucketList/Pods-BucketList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5CC9204D2C111DC60046075C /* Sources */ = {
@@ -266,6 +337,7 @@
 		};
 		5CC920602C111DC70046075C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0274164A73A53660BA93055 /* Pods-BucketList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +347,8 @@
 				DEVELOPMENT_TEAM = 9NHVUWY5RP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BucketList/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need access to your personal data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,6 +369,7 @@
 		};
 		5CC920612C111DC70046075C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0FFB1016074E9A7F4006B3 /* Pods-BucketList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +379,8 @@
 				DEVELOPMENT_TEAM = 9NHVUWY5RP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BucketList/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need access to your personal data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
