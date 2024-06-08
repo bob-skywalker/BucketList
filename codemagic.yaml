@@ -5,12 +5,7 @@ workflows:
       - name: CICD Started
         script: echo "Hello Broski!"
       - name: Build BucketList 
-        script:  xcodebuild build \
-          -workspace "BucketList.xcworkspace" \
-          -scheme "BucketList" \
-          CODE_SIGN_IDENTITY="" \
-          CODE_SIGNING_REQUIRED=NO \
-          CODE_SIGNING_ALLOWED=NO
+        script: xcodebuild build -workspace "BucketList.xcworkspace" -scheme "BucketList" CODE_SIGN_IDENTITY="" CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO 
     publishing:
       email:
         recipients:
